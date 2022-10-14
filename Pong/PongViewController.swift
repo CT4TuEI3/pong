@@ -124,7 +124,7 @@ class PongViewController: UIViewController {
         Удали два слэша в начале 127-ой строки и запусти проект, чтобы игра заработала!
         */
 
-        //configurePongGame()
+        configurePongGame()
     }
 
     /// Эта функция вызывается, когда экран PongViewController повяился на экране телефона

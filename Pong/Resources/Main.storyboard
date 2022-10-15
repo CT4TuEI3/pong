@@ -22,6 +22,12 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-7z-Mue">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="64"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unS-db-gNZ">
                                 <rect key="frame" x="155.33333333333334" y="668" width="103.33333333333334" height="24"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,21 +76,26 @@
                             <constraint firstItem="unS-db-gNZ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.25" id="Azj-K5-acL"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="CKc-LF-Y8e"/>
                             <constraint firstItem="MXA-l5-Wr3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.25" id="FrU-IV-OSE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SgE-7z-Mue" secondAttribute="trailing" id="HZ5-4v-Dzb"/>
                             <constraint firstItem="MXA-l5-Wr3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="MHG-3c-Q1W"/>
+                            <constraint firstItem="SgE-7z-Mue" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ml7-AV-w0r"/>
                             <constraint firstItem="MXA-l5-Wr3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="N8c-to-Rmn"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PXZ-um-Ppr"/>
                             <constraint firstAttribute="trailing" secondItem="Zf6-XP-fUO" secondAttribute="trailing" id="bxp-Dz-BZ1"/>
                             <constraint firstItem="QFA-jq-m1C" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="edd-dB-Tfh"/>
                             <constraint firstItem="Zf6-XP-fUO" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="fNs-7O-y5q"/>
+                            <constraint firstItem="SgE-7z-Mue" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.5" id="gAp-kY-CWY"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="unS-db-gNZ" secondAttribute="bottom" constant="44" id="hQ9-X2-x6q"/>
                             <constraint firstItem="QFA-jq-m1C" firstAttribute="width" secondItem="unS-db-gNZ" secondAttribute="width" multiplier="0.33" id="opd-30-qou"/>
                             <constraint firstItem="Zf6-XP-fUO" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="q1V-dR-iJ6"/>
+                            <constraint firstItem="SgE-7z-Mue" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="u2Z-GS-BlI"/>
                             <constraint firstItem="sWf-Ua-Wfx" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.5" id="xhK-3Z-VqJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ballView" destination="QFA-jq-m1C" id="q7c-aI-D9E"/>
                         <outlet property="enemyPaddleView" destination="MXA-l5-Wr3" id="odV-q7-r6j"/>
+                        <outlet property="enemyScoreLabel" destination="SgE-7z-Mue" id="QKC-Xp-vA3"/>
                         <outlet property="lineView" destination="Zf6-XP-fUO" id="kGT-ZU-0eH"/>
                         <outlet property="userPaddleView" destination="unS-db-gNZ" id="IFy-ER-tRo"/>
                         <outlet property="userScoreLabel" destination="sWf-Ua-Wfx" id="tMU-4S-2qN"/>

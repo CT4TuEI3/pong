@@ -38,6 +38,9 @@ class PongViewController: UIViewController {
 
     /// Это переменная отображения лэйбла со счетом игрока
     @IBOutlet var userScoreLabel: UILabel!
+    
+    @IBOutlet private var enemyScoreLabel: UILabel!
+
 
     // MARK: - Instance Properties
 
@@ -169,6 +172,9 @@ class PongViewController: UIViewController {
     /// - указывает что при следующем нажатии мяч должен запуститься
     ///
     private func configurePongGame() {
+        
+        enemyScoreLabel.text = "0"
+
         // NOTE: Настраиваем лэйбл со счетом игрока
         updateUserScoreLabel()
 

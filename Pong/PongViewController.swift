@@ -104,7 +104,13 @@ class PongViewController: UIViewController {
             updateUserScoreLabel()
         }
     }
-
+    /// Эта переменная хранит счёт соперника
+    var enemyScore: Int = 0 {
+        didSet {
+            /// При каждом обновлении значения переменной обновляем текст в лэйбле
+            updateEnemyScoreLabel()
+        }
+    }
     // MARK: - Instance Methods
 
     /// Эта функция запускается 1 раз когда представление экрана загрузилось
@@ -177,6 +183,7 @@ class PongViewController: UIViewController {
 
         // NOTE: Настраиваем лэйбл со счетом игрока
         updateUserScoreLabel()
+        updateEnemyScoreLabel()
 
         // NOTE: Включаем обработку жеста движения пальцем по экрану
         self.enabledPanGestureHandling()
@@ -194,5 +201,9 @@ class PongViewController: UIViewController {
 
     private func updateUserScoreLabel() {
         userScoreLabel.text = "\(userScore)"
+    }
+    // Этот метод обновляет значение лейбла счётчика противника на экране приложения
+        private func updateEnemyScoreLabel() {
+        enemyScoreLabel.text = "\(enemyScore)"
     }
 }

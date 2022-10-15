@@ -125,6 +125,8 @@ class PongViewController: UIViewController {
         */
 
         configurePongGame()
+        
+        ballView.backgroundColor = UIColor.green
     }
 
     /// Эта функция вызывается, когда экран PongViewController повяился на экране телефона
